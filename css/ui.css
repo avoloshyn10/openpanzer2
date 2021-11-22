@@ -1,1 +1,12 @@
 @import url("ui-message.css");
+
+body,html 
+{ 
+	margin:0; 
+	padding:0; 
+	border:0;
+  height:100%; 
+	overflow: hidden; /* hide the scroll bars that appear when the #game div is as large as the window */
+	background:black;
+  background-image: url('../resources/ui/page/images/mainbg.png');
+}
