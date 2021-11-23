@@ -1,0 +1,24 @@
+.mainPanel 
+{
+	position: absolute;
+	top: 10px;
+	left: 5px;
+	width: 502px;
+	height: 310px; 
+}
+
+#smLogo
+{
+	position: relative; /* for smLogoText */
+	height: 100px;
+	background-image: url('../resources/ui/dialogs/startmenu/images/logo.png');
+	background-repeat: no-repeat;
+}
+
+#smLogoText
+{
+	position:absolute;
+	bottom:0;
+	right: 5px;
+	font-weight: normal;
+}
