@@ -1,3 +1,25 @@
+#startmenu
+{
+	position: fixed;
+	width: 500px;
+	height: 320px;
+	left:50%;
+	margin-left: -240px;
+	top:50%;
+	margin-top: -160px;
+	color: #f8e064;
+	font-weight:bold;
+	font-family: Arial;
+	font-size: 12px;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	background-color: black;
+	z-index:99;
+	display: inline;
+	background-image: url('../resources/ui/dialogs/startmenu/images/startmenu.png');
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
 .mainPanel 
 {
 	position: absolute;
@@ -15,10 +37,29 @@
 	background-repeat: no-repeat;
 }
 
-#smLogoText
+#smLogoText, #smCredits
 {
 	position:absolute;
 	bottom:0;
 	right: 5px;
 	font-weight: normal;
+}
+
+#smButtons /* container of big main buttons */
+{
+    width: 266px;
+    height: 180px;
+    margin:0px auto 0px auto;
+}
+
+#smCamp { display: none; }
+
+/*#smScenSel *//*Scenario selection div */
+.smSelect
+{
+	width: 460px;
+	margin: 0px auto 0px auto;
+	border: 2px solid grey;
+	background: url('../resources/ui/dialogs/startmenu/images/arrow-down.png') no-repeat right;
+	overflow: hidden; /* to hide the select widget arrow */
 }
