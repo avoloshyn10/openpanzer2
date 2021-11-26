@@ -12,9 +12,15 @@ var game = new Game();
 
 function Game()
 {
+  this.ui = null;
+	this.state = null;
+	this.campaign = null;
+	this.scenario = null;
+	this.gameStarted = false; //Game not yet fully initialised
+
   this.init = function()
 	{
-
+    this.state = new GameState(this);
   }
 }
 
