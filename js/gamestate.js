@@ -14,4 +14,23 @@
 		settings:'openpanzer-settings-'+VERSION,
 		campaign:'openpanzer-campaign-'+VERSION,
 	};
+
+
+
+	this.restore = function()
+	{
+		var player;
+		var s = restoreItem(saveName.scenario);
+		var p = restoreItem(saveName.players);
+	}
+
+
+
+	function restoreItem(key)
+	{
+		var object = null;
+		if (localStorage) object = localStorage.getItem(key);
+		if (object) return JSON.parse(object);
+		return null;
+	}
  }

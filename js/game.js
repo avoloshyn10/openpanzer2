@@ -21,6 +21,10 @@ function Game()
   this.init = function()
 	{
     this.state = new GameState(this);
+    if (!this.state.restore()) //No savegame
+		{
+
+    }
   }
 }
 
