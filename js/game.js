@@ -23,7 +23,7 @@ function Game()
     this.state = new GameState(this);
     if (!this.state.restore()) //No savegame
 		{
-
+      this.scenario = new Scenario(Game.defaultScenario);
     }
   }
 }
