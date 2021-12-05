@@ -28,6 +28,8 @@ function Game()
   }
 }
 
+Game.defaultScenario = "tutorial.xml";
+
 function gameStart()
 {
   /*
