@@ -5,27 +5,20 @@
  * Licensed under the GPL 2 license:
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
- function GameState(Game)
- {
-  var saveName =
-	{
-		scenario:'openpanzer-scenario-'+VERSION,
-		players: 'openpanzer-players-'+VERSION,
-		settings:'openpanzer-settings-'+VERSION,
-		campaign:'openpanzer-campaign-'+VERSION,
-	};
+function GameState(Game) {
+  const saveName = {
+    scenario: 'openpanzer-scenario-'+VERSION,
+    players: 'openpanzer-players-'+VERSION,
+    settings: 'openpanzer-settings-'+VERSION,
+    campaign: 'openpanzer-campaign-'+VERSION,
+  }
 
-
-
-	this.restore = function()
-	{
-		var player;
-		var s = restoreItem(saveName.scenario);
-		var p = restoreItem(saveName.players);
+  this.restore = function () {
+    const player
+    const s = restoreItem(saveName.scenario)
+    const p = restoreItem(saveName.players)
 	}
-
-
-
+	
 	function restoreItem(key)
 	{
 		var object = null;

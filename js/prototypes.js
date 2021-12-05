@@ -6,4 +6,4 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 
-var VERSION = "0.0.0";
+const VERSION = '0.0.0'
