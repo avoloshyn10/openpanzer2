@@ -14,7 +14,7 @@ function GameState(Game) {
   }
 
   this.restore = function () {
-    const player
+    let player
     const s = restoreItem(saveName.scenario)
     const p = restoreItem(saveName.players)
 	}
