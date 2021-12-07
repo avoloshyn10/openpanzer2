@@ -19,13 +19,14 @@ function Scenario (scenFile) {
   this.file = scenFile
   let description = ''
   if (typeof scenFile !== 'undefined') {
-  // Lookup information about scenario in scenariolist if exists
+    // Lookup information about scenario in scenariolist if exists
     for (let i = 0; i < scenariolist.length; i++) {
       if (scenariolist[i][0] === scenFile) {
         this.name = scenariolist[i][1]
         console.log(this.name)
         description = scenariolist[i][2]
         console.log(description)
+        break
       }
     }
   }
