@@ -5,6 +5,7 @@
  * Licensed under the GPL 2 license:
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
+Scenario.loader = new ScenarioLoader() // set this.loader in Scenario?
 
 function Scenario (scenFile) {
   this.name = ''
@@ -29,5 +30,9 @@ function Scenario (scenFile) {
         break
       }
     }
+  }
+  //Loads scenario data files
+	this.load = function () {
+    const loaded = Scenario.loader.loadScenario(this);
   }
 }

@@ -21,6 +21,8 @@ function Game () {
     this.state = new GameState(this)
     if (!this.state.restore()) { // No savegame
       this.scenario = new Scenario(Game.defaultScenario)
+      console.log(this.scenario)
+      this.scenario.load()
     }
   }
 }
