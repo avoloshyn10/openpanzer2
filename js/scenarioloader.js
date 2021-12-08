@@ -10,5 +10,10 @@ function ScenarioLoader () {
   let scen = null
   this.loadScenario = function (scenarioObject) {
 		let xmlHttp
+    //
+    scen = scenarioObject // ??
+    xmlHttp = new XMLHttpRequest() // maybe replace by fetch?
+    xmlHttp.open("GET", Scenario.scenarioPath + scen.file) // ,false) // Synchronous XMLHttpRequest on the main thread is deprecated
+    xmlHttp.send(null)
   }
 }

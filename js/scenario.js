@@ -6,6 +6,7 @@
  * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  */
 Scenario.loader = new ScenarioLoader() // set this.loader in Scenario?
+Scenario.scenarioPath = "resources/scenarios/data/"
 
 function Scenario (scenFile) {
   this.name = ''
