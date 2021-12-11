@@ -1,4 +1,3 @@
-
 <?xml version='1.0' encoding='ASCII'?>
 <map file="tutorial.scn" name="Tutorial - Battle of Minorca" turns="16, 18, 20" date="February 04, 1939" dayturns="3" ground="0" atmosferic="0" latitude="0" rows="39" cols="44" eqp="eqp-adlerkorps" image="resources/maps/images/map_862.png">
   <player id="0" country="7" side="0" airtrans="0" navaltrans="0" support="25, 0, 0, 0" turnprestige="200, 100, 200, 200, 200, 100, 100, 300, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0"/>
