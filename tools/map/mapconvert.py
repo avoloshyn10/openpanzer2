@@ -8,3 +8,13 @@ import os, sys, fnmatch
 import pprint
 from struct import *
 from lxml import etree as x
+from datetime import date
+# spaghetti !
+#file specs http://luis-guzman.com/links/PG2_FilesSpec.html#(MAP) file
+MAP_IMAGE_URL="resources/maps/images/"
+scnlist = []
+maplist = []
+
+for scn in sys.argv[1:]:
+  print("Processing %s"%scn)
+  # the corresponding scenarion txt name
